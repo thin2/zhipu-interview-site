@@ -239,6 +239,7 @@
       color: var(--ink-2);
       font-size: 14.5px;
     }
+    .proj .project-period { margin-bottom: 8px; color: var(--haze); font-size: 13px; }
     .proj .meta {
       margin-top: 10px;
       display: flex;
@@ -273,7 +274,7 @@
     /* awards table-like */
     .award {
       display: grid;
-      grid-template-columns: 88px 1fr 160px 72px;
+      grid-template-columns: 88px 1fr 160px 110px;
       gap: 12px;
       padding: 14px 0;
       border-bottom: 1px solid var(--line);
@@ -385,7 +386,7 @@
     <div class="wrap">
       <p class="eyebrow">HFUT × ZHIPU · INTERVIEW BRIEF</p>
       <h1>韩宁</h1>
-      <p class="sub">计算机科学与技术 · 拟申请 <strong>Agent 智能体</strong>方向硕士<br />以工程交付验证动手能力，以开源项目承接智能体与 Harness 兴趣。</p>
+      <p class="sub">计算机科学与技术 · 2026 级硕士 · 拟申请 <strong>Agent 智能体</strong>方向<br />关注智能体开发、多智能体协作与 Agent 运行框架（Harness），注重实践与主动学习。</p>
       <div class="chips" aria-label="关键标签">
         <span class="chip">河南大学 · 计算机科学与技术</span>
         <span class="chip">拟申请方向 <strong>Agent 智能体</strong></span>
@@ -412,7 +413,7 @@
       <div class="sec-head">
         <span class="sec-num">01</span>
         <h2>学术与基础</h2>
-        <span class="sec-note">河南大学 2022—2026</span>
+        <span class="sec-note">河南大学 2022.09—2026.06</span>
       </div>
       <div class="grid-2">
         <div class="panel">
@@ -428,8 +429,8 @@
         <div class="panel">
           <dl class="kv">
             <dt>实习</dt>
-            <dd>黄河水利职业技术大学<br />国家智能社会治理试验基地<br /><span style="color:var(--haze);font-size:13px">2026.01—07 · 项目开发</span></dd>
-            <dt>代表交付</dt>
+            <dd>黄河水利职业技术大学<br />国家智能社会治理试验基地<br /><span style="color:var(--haze);font-size:13px">2026.01—2026.07 · 项目开发（实习）</span></dd>
+            <dt>参与项目</dt>
             <dd>教育厅项目评审系统<br />学习平台智能问答系统</dd>
             <dt>联系</dt>
             <dd><a href="mailto:hannfox@foxmail.com">hannfox@foxmail.com</a></dd>
@@ -450,7 +451,8 @@
         <div class="proj-id">P1</div>
         <div>
           <h3>教材场景知识图谱智能问答系统 · 本科毕业设计</h3>
-          <p>针对垂直领域 RAG 语义不足，基于 YouTu-GraphRAG 二次开发：中文教材 Schema、Neo4j 图谱、FAISS 向量检索、图—向量混合检索与多跳推理；FastAPI / Vue / Redis / MinIO / DeepSeek 完整链路。核心功能已完成，进入测试与性能调优。</p>
+          <p class="project-period">2026.01—2026.04</p>
+          <p>独立设计与二次开发；基于 YouTu-GraphRAG 完成中文教材 Schema、Neo4j 图谱、FAISS 向量检索、图—向量混合检索与多跳推理；使用 FastAPI / Vue / Redis / MinIO / DeepSeek 实现完整链路。</p>
           <div class="meta">
             <span class="tag t">GraphRAG</span>
             <span class="tag">Neo4j</span>
@@ -496,7 +498,8 @@
         <div class="proj-id">P2</div>
         <div>
           <h3>Dual AI Collaboration Skill · 开源 Agent 协作框架</h3>
-          <p>将 Claude Code 与 Codex 组织为规划/审计与开发执行角色，实现需求访谈、任务板、异步执行、验证门控、检查点恢复与卡死检测；Python 跨平台 CLI、任务状态管理与并发安全写入。</p>
+          <p class="project-period">2026.02—2026.03</p>
+          <p>独立设计与实现规划/审计与开发执行的双智能体协作流程，将 Claude Code 与 Codex 组织为不同角色；实现跨平台 CLI 与自动化测试。</p>
           <div class="meta">
             <span class="tag t">Multi-Agent</span>
             <span class="tag">Harness</span>
@@ -511,7 +514,8 @@
         <div class="proj-id">P3</div>
         <div>
           <h3>Obsidian Clipper · 浏览器扩展</h3>
-          <p>Chrome Manifest V3 + File System Access API + IndexedDB；Readability 正文抽取、HTML 转 Markdown、图片本地化与批量剪藏，服务本地知识库工作流。</p>
+          <p class="project-period">2026.07—2026.08</p>
+          <p>独立开发 Chrome MV3 浏览器扩展，实现 Readability 正文抽取、HTML 转 Markdown 与本地知识库批量剪藏。</p>
           <div class="meta">
             <span class="tag">Chrome MV3</span>
             <span class="tag">Readability</span>
@@ -525,7 +529,8 @@
         <div class="proj-id">P4</div>
         <div>
           <h3>牙医诊所信息管理系统 · 全栈部署</h3>
-          <p>对接医生需求，独立完成 Flask + Vue + MySQL 前后端与云服务器部署维护，支撑 5–20 人日常使用并持续迭代。</p>
+          <p class="project-period">2026.01—2026.02</p>
+          <p>负责 Flask + Vue + MySQL 全栈开发、云服务器部署与维护，提升诊所管理效率。</p>
           <div class="meta">
             <span class="tag">Flask</span>
             <span class="tag">Vue</span>
@@ -548,41 +553,35 @@
           <span class="y">2025.08</span>
           <span>全国大学生统计建模大赛</span>
           <span class="lv">河南赛区本科生组一等奖</span>
-          <span class="role">数据清洗</span>
+          <span class="role">3人团队，数据清洗</span>
         </div>
         <div class="award">
           <span class="y">2024</span>
           <span>全国大学生数学建模竞赛</span>
           <span class="lv">河南赛区省级二等奖</span>
-          <span class="role">代码和算法</span>
+          <span class="role">3人团队，代码和算法</span>
         </div>
         <div class="award">
           <span class="y">2025.05</span>
-          <span>第十六届蓝桥杯 Python 大学 B 组</span>
+          <span>第十六届蓝桥杯 Python 程序设计大学 B 组</span>
           <span class="lv">河南赛区二等奖</span>
           <span class="role">个人</span>
         </div>
         <div class="award">
           <span class="y">2025</span>
-          <span>全国大学生数学竞赛（非数学 A 类）</span>
+          <span>第十七届全国大学生数学竞赛（非数学 A 类）</span>
           <span class="lv">三等奖</span>
           <span class="role">个人</span>
         </div>
         <div class="award">
           <span class="y">2025</span>
-          <span>睿抗机器人开发者大赛（RAICOM）编程技能</span>
+          <span>睿抗机器人开发者大赛（RAICOM）编程技能竞赛</span>
           <span class="lv">河南赛区三等奖</span>
           <span class="role">个人</span>
         </div>
         <div class="award">
           <span class="y">2023—24</span>
           <span>河南大学三好学生</span>
-          <span class="lv">校级荣誉</span>
-          <span class="role">个人</span>
-        </div>
-        <div class="award">
-          <span class="y">2025—26</span>
-          <span>河南大学奖学金</span>
           <span class="lv">校级荣誉</span>
           <span class="role">个人</span>
         </div>
@@ -633,7 +632,7 @@
       <div class="panel">
         <div class="plan-box">
           <h3>代表性优势</h3>
-          <p>数学与算法基础扎实；动手能力强，习惯从需求到部署独立交付；抗压能力较强，能适应高强度学习与项目节奏；持续关注大模型与智能体前沿，对 RAG、知识图谱与多智能体协作兴趣明确。</p>
+          <p>数学与算法基础扎实（高等数学 A（一）与概率论均为 100 分，考研数学二 145 分，CSP 前 11.78%）；动手能力强，注重实践，能够在开发过程中主动学习并解决问题；持续关注大模型与智能体前沿，对智能体开发、多智能体协作兴趣明确，愿意在校企联合培养平台中深入探索研究与应用问题。</p>
         </div>
         <div class="plan-box">
           <h3>需要进一步提升</h3>
@@ -641,7 +640,7 @@
         </div>
         <div class="plan-box">
           <h3>未来 1—3 年（拟定方向）</h3>
-          <p>以 <strong>Agent 开发与 Harness</strong> 为主线：系统学习智能体架构、工具调用、上下文与记忆管理、验证与恢复机制；在 Dual AI 协作实践基础上，结合导师课题与智谱场景完善可复用 Harness 能力（任务拆解、异步执行、质量门控、可观测性），争取形成开源框架或实验系统，并沉淀论文/技术报告。</p>
+          <p>围绕<strong>智能体开发与 Agent 运行框架（Harness）</strong>，系统学习智能体架构、工具调用、上下文与记忆管理、验证与恢复机制；在现有实践基础上，结合导师课题与智谱场景，完善可复用的 Agent Harness 能力（任务拆解、异步执行、质量门控、可观测性），争取形成开源框架或实验系统，并沉淀论文或技术报告。</p>
         </div>
       </div>
     </section>
